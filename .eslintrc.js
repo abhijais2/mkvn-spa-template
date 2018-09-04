@@ -1,10 +1,11 @@
 module.exports = {
-  env: {
-    node: true,
-    es6: true
-  },
-  extends: 'standard',
+  root: true,
+  parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module'
-  }
+  },
+  extends: 'standard',
+  plugins: [
+    'html'
+  ]
 }

@@ -9,12 +9,12 @@ module.exports = merge(baseWebpackConfig, {
   mode: 'development',
 
   devServer: {
-    port: parseInt(process.env.AIS_APP_PORT) + 1,
+    port: parseInt(process.env.APP_PORT) + 1,
     open: true,
     hot: true,
     historyApiFallback: true,
     proxy: {
-      '/api': `http://${process.env.AIS_APP_PUBLIC_HOST}:${process.env.AIS_APP_PORT}`
+      '/api': `http://${process.env.APP_PUBLIC_HOST}:${process.env.APP_PORT}`
     }
   },
 
