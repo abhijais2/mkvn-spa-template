@@ -55,6 +55,7 @@
     "koa-router": "^7.4.0",
     "koa-static": "^5.0.0",
     "moment": "^2.22.2",
+    "mongoose": "^5.2.14",
     "nconf": "^0.10.0",
     "node-sass": "^4.9.3",
     "per-env": "git://github.com/sylvainlap/per-env.git#master",
