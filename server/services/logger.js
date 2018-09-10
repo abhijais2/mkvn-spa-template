@@ -1,6 +1,7 @@
 const winston = require('winston')
+const { LOG_LEVEL } = require('nconf').get('app')
 
-const logLevels  = {
+const logLevels = {
   levels: {
     fatal: 0,
     error: 1,
@@ -10,27 +11,27 @@ const logLevels  = {
     trace: 5
   },
   colors: {
-    fatal:    'red',
-    error:    'orange',
-    warning:  'yellow',
-    info:     'green',
-    debug:    'blue',
-    trace:    'gray'
+    fatal: 'red',
+    error: 'orange',
+    warning: 'yellow',
+    info: 'green',
+    debug: 'blue',
+    trace: 'gray'
   }
-};
+}
 
 // TODO: verfiy that colorize, timestamp works fine
 
 var loggerSettings = {
-  level: 'debug',
+  level: LOG_LEVEL,
   levels: logLevels.levels,
   transports: [ new winston.transports.Console({
     colorize: true,
     timestamp: true,
     json: true
   })]
-};
+}
 
-winston.addColors(logLevels);
-logger = winston.createLogger(loggerSettings);
-module.exports = logger;
+winston.addColors(logLevels)
+
+module.exports = winston.createLogger(loggerSettings)

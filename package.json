@@ -17,7 +17,7 @@
   "scripts": {
     "start": "per-env",
     "start:production": "node server/index.js",
-    "start:development": "node server/index.js & webpack-dev-server --config ./build/webpack.conf",
+    "start:development": "nodemon server/index.js & webpack-dev-server --config ./build/webpack.conf",
     "build": "./node_modules/.bin/webpack --progress --config ./build/webpack.conf"
   },
   "repository": {
