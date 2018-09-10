@@ -7,10 +7,6 @@ const nconf = require('nconf').argv().env()
 nconf.defaults(require('../config'))
 appModulePath.addPath(path.resolve(__dirname, '..'))
 
-global.rootRequire = function (name) {
-  return require(path.join(__dirname, '/..', name))
-}
-
 require('./init').register()
 
 const app = require('./app')
