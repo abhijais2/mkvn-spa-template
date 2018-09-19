@@ -2,13 +2,6 @@
   "name": "mkvn-spa-template",
   "version": "1.0.0",
   "description": "",
-  "keywords": [
-    "vuejs",
-    "nodejs",
-    "koajs",
-    "mongoose",
-    "webpack"
-  ],
   "main": "index.js",
   "engines": {
     "node": ">=8.9.0"
@@ -32,6 +25,13 @@
   "homepage": "https://github.com/abhijais2/mkvn-spa-template#readme",
   "globals": [
     "rootRequire"
+  ],
+  "keywords": [
+    "vuejs",
+    "nodejs",
+    "koajs",
+    "mongoose",
+    "webpack"
   ],
   "dependencies": {
     "@babel/core": "^7.0.0",
