@@ -10,7 +10,7 @@
   "scripts": {
     "start": "per-env",
     "start:production": "node server/index.js",
-    "start:development": "nodemon server/index.js & webpack-dev-server --config ./build/webpack.conf",
+    "start:development": "nodemon server/index.js & ./node_modules/.bin/webpack-dev-server --config ./build/webpack.conf",
     "build": "./node_modules/.bin/webpack --progress --config ./build/webpack.conf"
   },
   "repository": {
@@ -82,6 +82,6 @@
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^4.0.0",
-    "webpack-dev-server": "^3.1.7"
+    "webpack-dev-server": "^3.1.8"
   }
 }
